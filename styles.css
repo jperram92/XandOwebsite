@@ -8,7 +8,7 @@ body {
     justify-content: center;
     height: 100vh;
     background: linear-gradient(to bottom, #87CEEB, #000); /* Sky blue to black gradient background */
-    color: white; /* Text color */
+    color:black; /* Text color */
 }
 
 .header, .footer {
@@ -69,6 +69,7 @@ button {
 
 h2 {
     margin-top: 20px;
+    color: black;
 }
 
 p {
