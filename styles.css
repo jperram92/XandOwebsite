@@ -1,14 +1,25 @@
 body {
     font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin: 0;
+    background: #f0f0f0; /* Light grey background color */
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
     text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* White background with slight transparency */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
 }
 
 .board {
