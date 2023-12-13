@@ -3,23 +3,28 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column; /* Updated to column for a header, content, and footer layout */
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: #f0f0f0; /* Light grey background color */
-    background-image: url('your-background-image.jpg'); /* Replace 'your-background-image.jpg' with your image file */
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(to bottom, #87CEEB, #000); /* Sky blue to black gradient background */
+    color: white; /* Text color */
+}
+
+.header, .footer {
+    background: #333; /* Dark background for the header and footer */
+    padding: 10px;
+    text-align: center;
 }
 
 .container {
     text-align: center;
-    background: rgba(255, 255, 255, 0.8); /* White background with slight transparency */
+    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
-    max-width: 600px; /* Set a maximum width for the container */
-    width: 100%; /* Make the container take up 100% width */
-    margin: 0 auto; /* Center the container horizontally */
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto; /* Adjusted margin for better spacing */
 }
 
 h1 {
@@ -30,18 +35,20 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-gap: 5px;
-    margin: 20px auto; /* Center the board horizontally */
+    margin: 20px auto;
 }
 
 .cell {
     width: 100px;
     height: 100px;
-    border: 2px solid #333;
+    border: 2px solid #fff; /* White border for contrast */
     font-size: 2em;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    background: #87CEEB; /* Sky blue background for cells */
+    color: #333; /* Dark text color for cells */
 }
 
 .result {
@@ -54,6 +61,10 @@ button {
     font-size: 1em;
     padding: 10px 20px;
     cursor: pointer;
+    background: #333; /* Dark background for the button */
+    color: #fff; /* White text color for the button */
+    border: none;
+    border-radius: 5px;
 }
 
 h2 {
