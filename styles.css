@@ -7,6 +7,7 @@ body {
     justify-content: center;
     height: 100vh;
     background: #f0f0f0; /* Light grey background color */
+    background-image: url('your-background-image.jpg'); /* Replace 'your-background-image.jpg' with your image file */
     background-size: cover;
     background-position: center;
 }
@@ -16,6 +17,9 @@ body {
     background: rgba(255, 255, 255, 0.8); /* White background with slight transparency */
     padding: 20px;
     border-radius: 10px;
+    max-width: 600px; /* Set a maximum width for the container */
+    width: 100%; /* Make the container take up 100% width */
+    margin: 0 auto; /* Center the container horizontally */
 }
 
 h1 {
@@ -26,7 +30,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-gap: 5px;
-    margin: 20px 0;
+    margin: 20px auto; /* Center the board horizontally */
 }
 
 .cell {
@@ -50,4 +54,22 @@ button {
     font-size: 1em;
     padding: 10px 20px;
     cursor: pointer;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+p {
+    text-align: left;
+}
+
+ul {
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Additional styles for list items if needed */
+ul li {
+    margin-bottom: 10px;
 }
